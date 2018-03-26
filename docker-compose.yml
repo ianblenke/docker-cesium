@@ -1,0 +1,16 @@
+version: '2.0'
+
+services:
+
+  cesium:
+    build:
+      context: .
+      args:
+        CESIUM_VERSION: ${CESIUM_VERSION}
+      dockerfile: Dockerfile
+    image: sofwerx/cesium:${CESIUM_VERSION}
+    container_name: cesium
+    hostname: cesium
+#    ports:
+#      - 8080:8080
+
