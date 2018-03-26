@@ -19,5 +19,6 @@ RUN npm install
 ENV PORT=8080
 EXPOSE ${PORT}
 
-CMD node server.js --port ${PORT} --public
+ADD SmartHouse/ /cesium/SmartHouse/
 
+CMD node server.js --port ${PORT} --public
